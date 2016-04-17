@@ -16,7 +16,7 @@ namespace Odefood
             routes.MapRoute(
                 name: "Cuisine",
                 url: "cuisine/{name}",
-                defaults: new { Controller = "Cuisine", action = "Search", name= "" });
+                defaults: new { Controller = "Cuisine", action = "Search", name= UrlParameter.Optional });
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
